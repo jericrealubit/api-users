@@ -3,7 +3,7 @@
 ## REST API with express / mongodb / netlify / serverless 
 
 # GET
-https://rest-api-express-mongodb.netlify.app/.netlify/functions/api/
+https://api-users-jeric.netlify.app/.netlify/functions/api
 
 # POST
 https://rest-api-express-mongodb.netlify.app/.netlify/functions/api/
