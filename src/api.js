@@ -27,18 +27,10 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   // res.send("Create New User")
-  let id = '';
-  collection
-    .insertOne(req.body, (err, res) => {
-      if (err) throw err;
-    })
-    .then((result) => {
-      id = result.insertedId;
-    })
-    .catch((err) => {
-        if (err) throw err;
-    });
-  res.send(id);
+  collection.insertOne(req.body, (err, result) => {
+    if (err) throw err;
+    res.send(result.insertedId);
+  });
 });
 
 router
