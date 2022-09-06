@@ -35,7 +35,9 @@ router.post("/", (req, res) => {
     .then((result) => {
       id = result.insertedId;
     })
-    .catch((err) => {});
+    .catch((err) => {
+        if (err) throw err;
+    });
   res.send(id);
 });
 
